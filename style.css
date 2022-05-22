@@ -1,19 +1,26 @@
 
 *{
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
+    touch-action: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+
 }
 
 body{
     margin: 0px;
     padding: 0px;
     /* background-color: #E0DDAA; */
-    background: url(https://wallpaper.dog/large/10892376.jpg);
+    background: url(https://wallpaperaccess.com/full/340434.png);
 }
 
 .toolbox-cont{
     height: 5rem;
-    background-color: #141E27;
+    /* background-color: #141E27; */
+    /* background-color: #09113f; */
+    background-color: lightsteelblue;
     display: flex;
     align-items: center;
     position:fixed;
@@ -24,7 +31,7 @@ body{
 .toolbox-priority-cont{
     height: 3rem;
     background-color: #EEEDDE;
-    width: 18rem;
+    width: 25rem;
     margin-left: 5rem;
     display: flex;
     align-items: center;
@@ -44,8 +51,8 @@ body{
 }
 
 .color{
-    height: 1.5rem;
-    width: 3rem;
+    height: 1.75rem;
+    width: 5rem;
 }
 
 .lightpink{
@@ -80,18 +87,27 @@ body{
     left: 25vw;
     top:25vh;
     /* background-color: #EEEDDE; */
-    background: url(https://media.gettyimages.com/videos/abstract-light-gray-backgroundsloop-video-id1216004370?s=640x640);
+    background: url(https://www.teahub.io/photos/full/276-2760960_blue-to-black-gradient.jpg);
     height: 50vh;
     width: 50vw;
     display: none;
+    transition: all 100ms ease;
+    box-shadow: 5px 5px 10px -5px #0007;
+    cursor:auto;
 }
+.modal-cont:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0  200px 10px  rgba(93, 91, 91, 0.467);
+    border: 2px solid white;
+}
+
 
 .textarea-cont{
     outline:none;
     resize: none;
     border: none;
-    background: url(https://www.wallpaperup.com/uploads/wallpapers/2014/01/16/229225/f992520d8d8cba12dadb9d4c856ce2ae.jpg);
-    /* background-color: #EEEDDE; */
+    /* background: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?w=2000); */
+    background-color: #3d5a80;
     height: 100%;
     width: 75%;
     font-size: 2rem;
@@ -111,8 +127,8 @@ body{
 }
 
 .priority-color{
-    height: 3rem;
-    width: 5rem;
+    height: 5rem;
+    width: 9rem;
 }
 
 .active{
@@ -130,8 +146,16 @@ body{
 
 .ticket-cont{
     background-color: #EEEDDE;
+    box-shadow: 5px 5px 10px -5px #0007;
+    cursor:auto;
     height: 10rem;
     width: 16rem;
+    transition: all 100ms ease;
+}
+.ticket-cont:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0  200px 10px  rgba(93, 91, 91, 0.467);
+    border: 2px solid white;
 }
 
 .ticket-color{
